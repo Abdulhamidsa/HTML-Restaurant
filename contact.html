@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Resturant KEA</h1>
+        <nav>
+            <ul>
+                <li> <a title="Home page" href="index.html">Home</a></li>
+                <li> <a title="Food menu" href="menu.html">Menu</a></li>
+                <li> <a title="Contact us " href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p><em> Guldbergsgade 29N 2200 Copenhagen</em></p>
+                <p><em>Phone no:</em><a href="tel:+4520825370">20 82 53 70</a></p>
+                <p><em>Email:</em><a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></p>
+                <img src="/img/map.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <form action="submit-form.php" method="post">
+                <fieldset>
+                    <legend>Contact form</legend>
+                    <label for="full-name"> Full name</label>
+                    <input type="text" name="full-name" required>
+                    <br>
+                    <label for="phone-number"> Phone no.</label>
+                    <input type="tel" name="phone-number" required>
+                    <br>
+                    <label for="email"> E-mail</label>
+                    <input type="email" name="email" required>
+                    <br>
+                    <label for="persons"> Persons</label>
+                    <input type="number" name="persons" min="1" max="5" required>
+                    <br>
+                    <label for="date"> Date and time</label>
+                    <input type="datetime-local" name="date" min="2023-08-25T08:00" max="2023-09-25T08:00" required>
+                    <br>
+                    <label for="message"> Further information</label>
+                    <br>
+                    <textarea name="message" cols="20" rows="3"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

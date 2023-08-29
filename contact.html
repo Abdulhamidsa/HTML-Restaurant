@@ -19,16 +19,16 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <p><em> Guldbergsgade 29N 2200 Copenhagen</em></p>
-                <p><em>Phone no:</em><a href="tel:+4520825370">20 82 53 70</a></p>
-                <p><em>Email:</em><a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></p>
-                <img src="img/map.jpg" alt="image of a map with the resturant's location">
-            </div>
-        </section>
-        <section>
-            <form action="submit-form.php" method="post">
+        <article>
+            <address>
+                <p> Guldbergsgade 29N 2200 Copenhagen</p>
+                <p>Phone no:<a href="tel:+4520825370">20 82 53 70</a></p>
+                <p>Email:<a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></p>
+            </address>
+            <img src="img/map.jpg" alt="image of a map with the resturant's location">
+        </article>
+        <article>
+            <form action="submit-form.php" method="get">
                 <fieldset>
                     <legend>Contact form</legend>
                     <label for="full-name"> Full name</label>
@@ -50,10 +50,10 @@
                     <br>
                     <textarea name="message" cols="20" rows="3"></textarea>
                     <br>
-                    <button type="submit">Submit</button>
+                    <input type="submit" value="Submit">
                 </fieldset>
             </form>
-        </section>
+        </article>
     </main>
 </body>
 
